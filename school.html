@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education: Lyceum International - Minush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/ProfilePicture.jpg" type="image/jpg">
+</head>
+<body class="bg-secondary text-primary"> <header class="bg-secondary sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+             <a href="index.html" class="text-2xl font-bold text-primary hover:text-accent-gold transition duration-300" style="font-family: 'Noto Serif JP', serif;">Minush</a>
+            <button id="mobile-menu-button" class="md:hidden block text-primary focus:outline-none" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="passion.html" class="nav-link">Passion</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-border-color" aria-hidden="true">
+            <ul class="flex flex-col items-center py-4 space-y-3">
+                 <li><a href="index.html" class="nav-link block py-2">Home</a></li>
+                <li><a href="about.html" class="nav-link block py-2">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link block py-2">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link block py-2">Skills</a></li>
+                <li><a href="passion.html" class="nav-link block py-2">Passion</a></li>
+                <li><a href="contact.html" class="nav-link block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="fixed top-[56px;] z-40 w-full mt-0 mb-0">
+        <div class="w-full h-1 bg-primary">
+            <div id="scroll-progress" class="h-full w-0  transition-all duration-1 ease-linear" style="background-color: gold;"></div>
+        </div>
+    </div>
+    <main class="pt-16">
+         <section id="school-content" class="py-16">
+            <div class="container mx-auto px-6">
+                 <h1 class="bg-primary px-6 py-4 text-4xl font-bold text-center mb-12 page-title" style="border-radius: 12px;">My Education</h1>
+                 <div class="max-w-4xl mx-auto content-block bg-primary"> <h2 class="text-3xl font-semibold text-primary mb-4">Lyceum International School Wattala</h2>
+                    <p>I completed my O Level examinations at Lyceum International School in Wattala. My time at Lyceum provided me with a strong academic foundation and numerous opportunities for personal development.</p>
+                    <p>The school fosters an environment that encourages both academic excellence and participation in extracurricular activities, which helped shape my interests and skills.</p>
+
+                     <img src="assets/LISW.jpg"
+                         alt="Placeholder image representing Lyceum International School"
+                         class="mx-auto rounded-lg shadow-md my-8 w-full">
+
+                         <h3 class="text-2xl font-semibold text-primary pt-4">Key Experiences</h3>
+                         <p>During my studies, I focused on Chemistry, Physics, and Computer Science. I especially enjoyed spending time with my friends and working hard to achieve the best grades possible at school.</p>
+                         <ul class="list-disc list-inside pl-4 space-y-2 mt-4">
+                             <li>Completed O Levels in 2024.</li>
+                             <li>Developed skills in coding, as well as knowledge of chemical properties, physics concepts, and more.</li>
+                             <li>Actively participated in Karate, Cricket, Swimming, and High Jump throughout my school years.</li>
+                         </ul>
+                         
+                         <h3 class="text-2xl font-semibold text-primary pt-6 mt-6">Learn More</h3>
+                         <p>For more information about Lyceum International School Wattala, you can visit their official website:</p>
+                         <p class="mt-2">
+                             <a href="https://lyceum.lk/wattala/" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent-red text-white font-bold py-2 px-6 rounded-full hover:bg-red-700 transition duration-300 text-base">
+                                 Visit Lyceum Wattala Website
+                             </a>
+                         </p>
+                         
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary mt-16 py-8 border-t border-border-color">
+        <div class="container mx-auto px-6 text-center text-secondary text-sm">
+            <p>© <span id="current-year"></span> Minush Pathinisekara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

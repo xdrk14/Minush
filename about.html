@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Minush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/ProfilePicture.jpg" type="image/jpg">
+</head>
+<body class="bg-primary text-primary">
+
+    <header class="bg-secondary sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary hover:text-accent-gold transition duration-300" style="font-family: 'Noto Serif JP', serif;">Minush</a>
+            <button id="mobile-menu-button" class="md:hidden block text-primary focus:outline-none" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="passion.html" class="nav-link">Passion</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-border-color" aria-hidden="true">
+            <ul class="flex flex-col items-center py-4 space-y-3">
+                 <li><a href="index.html" class="nav-link block py-2">Home</a></li>
+                <li><a href="about.html" class="nav-link block py-2">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link block py-2">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link block py-2">Skills</a></li>
+                <li><a href="passion.html" class="nav-link block py-2">Passion</a></li>
+                <li><a href="contact.html" class="nav-link block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="fixed top-[56px;] z-40 w-full mt-0 mb-0">
+        <div class="w-full h-1 bg-primary">
+            <div id="scroll-progress" class="h-full w-0 transition-all duration-1 ease-linear" style="background-color:gold;"></div>
+        </div>
+    </div>
+    
+    
+    <main class="pt-16">
+         <section id="about-content" class="py-16">
+            <div class="container mx-auto px-6">
+                <h1 class="bg-primary px-6 py-4 text-4xl font-bold text-center mb-12 page-title" style="border-radius: 12px;" style="border-radius: 12px;">About Me</h1>
+                <div class="flex flex-col md:flex-row items-center gap-12 content-block"> <div class="md:w-1/3 text-center flex-shrink-0">
+                         <img src="assets/ProfilePicture.jpg" alt="Minush Profile Picture Placeholder"
+                              class="mx-auto rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-accent-gold"> </div>
+                    <div class="md:w-2/3 text-lg space-y-4"> <p class="text-xl">Hello! I'm Minush Pathinisekara, a 15-year-old student from Ja-Ela, Sri Lanka.</p>
+                        <p>Having recently completed my O Levels at <span class="font-semibold text-primary">Lyceum International School Wattala</span>, I'm eager to continue learning and exploring new challenges.</p>
+                        <p>Beyond academics, I dedicate time to practicing <span class="font-semibold text-primary">Katana fighting</span>. This martial art is more than just a hobby; it's a discipline that cultivates focus, respect, and a deep appreciation for tradition and precision.</p>
+                        <p>My goal is to balance my academic pursuits with personal growth, always striving for discipline and understanding in everything I do. This website shares insights into my interests and the topics I've researched.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary mt-16 py-8 border-t border-border-color">
+        <div class="container mx-auto px-6 text-center text-secondary text-sm">
+            <p>© <span id="current-year"></span> Minush Pathinisekara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

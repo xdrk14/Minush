@@ -1,0 +1,297 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap');
+
+:root {
+    /* New Color Scheme */
+    --bg-primary: #ffffff;      /* Main background: white */
+    --bg-secondary: #f5f5f5;    /* Light gray section background */
+    --text-primary: #1f2937;    /* Dark gray (for primary text) */
+    --text-secondary: #6b7280;  /* Medium gray (for secondary text) */
+    --accent: #2563eb;          /* Light blue accent */
+    --accent-hover: #1d4ed8;    /* Darker blue for hover */
+    --border-color: #d1d5db;    /* Soft gray for borders */
+    --success-color: #34d399;   /* Green for success messages */
+    --error-color: #f87171;     /* Red for error messages */
+    --accent-gold: #D4AF37;     /* Gold accent color */
+    --accent-gold-darker: #B78B2F; /* Darker gold accent */
+    --accent-red: #E11D48;      /* Red accent color */
+    --div-background: #f9f9f9;  /* Slightly darker white for divs */
+    --div-text-color: #333333;  /* Darker text color for divs */
+}
+
+/* Apply base styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Primary font */
+    /*background-color: var(--bg-primary);*/
+    background-image: url("assets/backgroundimagedekstop.jpg");
+    background-size:cover;  /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background image fixed while scrolling */
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.7; /* Slightly increased line height */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
+    /* Optional: Add a subtle Japanese background pattern */
+    /* background-image: url('path/to/your/japanese-wave-pattern.svg'); */
+    /* background-size: cover; */ /* Or repeat, etc. */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Apply theme colors using variables */
+
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-accent-gold { color: var(--accent-gold); }
+.text-accent-red { color: var(--accent-red); }
+.hover\:text-accent-gold:hover { color: var(--accent-gold); }
+.hover\:text-accent-red:hover { color: var(--accent-red); }
+.bg-accent-red { background-color: var(--accent-red); }
+.bg-accent-gold { background-color: var(--accent-gold); }
+.bg-accent-hover { background-color: var(--accent-hover); }
+.hover\:bg-red-700:hover { background-color: #c5303e; } /* Darker red */
+.hover\:bg-gold-darker:hover { background-color: var(--accent-gold-darker); }
+
+/* Header/Nav specific styles */
+header {
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid var(--border-color); /* Subtle border */
+}
+
+/* Style for active nav link */
+.nav-link-active {
+    color: var(--accent-gold) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    padding: 0.5rem 0;
+    position: relative;
+    text-decoration: none;
+    font-weight: 400; /* Regular weight for non-active links */
+    transition: color 0.2s ease;
+}
+
+/* Hover effect: gold underline with blink */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; /* Position slightly below text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text-primary);
+    transition: width 0.3s ease-out, opacity 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--accent-gold); /* Gold hover for nav links */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full underline width on hover */
+    opacity: 1;  /* Ensure the underline appears */
+}
+
+/* Blinking effect on hover */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.nav-link:hover::after {
+    animation: blink 1s infinite; /* Add blinking effect */
+}
+
+/* Underline effect for desktop nav */
+/*
+@media (max-width:768px){
+    body{
+        background-image: url("assets/backgroundimage.jpg");
+    }
+}
+
+*/
+
+.hovergold:hover{
+    color:white;
+    background-color:#D4AF37;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes switch_bgtofg{
+    from {
+        background-color:white;
+        color:#D4AF37; 
+    }
+    to {
+        color:white;
+        background-color:#D4AF37;
+    }
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+   
+    .nav-link:not(.nav-link-active)::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px; /* Position slightly below text */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--accent-gold);
+        transition: width 0.3s ease-out;
+    }
+    .nav-link:hover::after {
+        width: 60%; /* Underline doesn't span ful5l width */
+    }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif JP', serif; /* Japanese font for headings */
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Style for the main page titles */
+.page-title {
+    border-bottom: 3px solid var(--accent-gold); /* Use gold accent */
+    padding-bottom: 0.75rem;
+    display: inline-block;
+}
+
+/* Links */
+a {
+    color: var(--accent-gold); /* Default link color to gold */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-gold-darker);
+}
+
+nav a:hover { /* Override general link hover for nav */
+    color: var(--accent-gold);
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: var(--bg-primary); /* Match primary background */
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 0.375rem; /* rounded-md */
+    padding: 0.75rem 1rem; /* Slightly more padding */
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.4); /* Gold focus ring */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+label {
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem; /* Slightly larger label */
+    font-weight: 400;
+    display: block;
+}
+
+/* Contact form submit button uses gold */
+button[type="submit"] {
+    background-color: var(--accent-gold);
+    color: var(--bg-primary); /* Dark text on gold button */
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px; /* rounded-full */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-gold-darker);
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* Form status message styling */
+#form-status.success { color: var(--success-color); }
+#form-status.error { color: var(--error-color); }
+#form-status.sending { color: var(--accent-gold); }
+
+/* Basic Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down { animation: fadeInDown 0.7s ease-out forwards; }
+.animate-fade-in-up { animation: fadeInUp 0.7s ease-out 0.2s forwards; }
+
+/* Improve readability for long text blocks */
+.content-block { /* Use this class on main content divs */
+    background-color: var(--bg-secondary); /* Semi-transparent secondary bg */
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-block p,
+.content-block ul,
+.content-block li {
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.content-block h2,
+.content-block h3 {
+     color: var(--text-primary);
+     margin-top: 1.5em;
+     margin-bottom: 0.8em;
+     border-bottom: 1px solid var(--border-color);
+     padding-bottom: 0.3em;
+}
+
+.content-block a {
+    font-weight: 700; /* Bold links within content */
+}
+
+.content-block ul {
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+.content-block ol {
+    list-style: decimal;
+    padding-left: 2em;
+}

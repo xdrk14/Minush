@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Minush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/ProfilePicture.jpg" type="image/jpg">
+</head>
+<body class="bg-primary text-primary">
+
+    <header class="bg-secondary sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+             <a href="index.html" class="text-2xl font-bold text-primary hover:text-accent-gold transition duration-300" style="font-family: 'Noto Serif JP', serif;">Minush</a>
+            <button id="mobile-menu-button" class="md:hidden block text-primary focus:outline-none" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="passion.html" class="nav-link">Passion</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-border-color" aria-hidden="true">
+            <ul class="flex flex-col items-center py-4 space-y-3">
+                 <li><a href="index.html" class="nav-link block py-2">Home</a></li>
+                <li><a href="about.html" class="nav-link block py-2">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link block py-2">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link block py-2">Skills</a></li>
+                <li><a href="passion.html" class="nav-link block py-2">Passion</a></li>
+                <li><a href="contact.html" class="nav-link block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="fixed top-[56px;] z-40 w-full mt-0 mb-0">
+        <div class="w-full h-1 bg-primary">
+            <div id="scroll-progress" class="h-full w-0  transition-all duration-1 ease-linear" style="background-color: gold;"></div>
+        </div>
+    </div>
+    <main class="pt-16">
+         <section id="skills-content" class="py-16">
+            <div class="container mx-auto px-6">
+                 <h1 class="bg-primary px-6 py-4 text-4xl font-bold text-center mb-12 page-title" style="border-radius: 12px;">My Strengths & Skills</h1>
+                 <div class="mx-auto content-block">
+                    <p class="mb-8">Through my studies, hobbies, and personal interests, I am continuously developing a range of skills. Here are some of the key areas I focus on:</p>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+
+                        <div class="bg-primary p-6 rounded-lg border border-border-color shadow-sm">
+                            <svg class="icon text-accent-red mb-3 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg>
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Discipline & Focus</h3>
+                            <p class="text-secondary text-sm">Cultivated through martial arts training, essential for achieving goals and maintaining consistency.</p>
+                        </div>
+
+                        <div class="bg-primary p-6 rounded-lg border border-border-color shadow-sm">
+                            <svg class="icon text-accent-gold mb-3 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L1.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L21 5.25l-.813 2.846a4.5 4.5 0 00-3.09 3.09L13.25 12l2.846.813a4.5 4.5 0 003.09 3.09L21 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L13.25 12z" /> </svg>
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Analytical Thinking</h3>
+                            <p class="text-secondary text-sm">Enjoy breaking down complex problems and finding logical solutions, particularly in [mention area like IT or Math].</p>
+                        </div>
+
+                        <div class="bg-primary p-6 rounded-lg border border-border-color shadow-sm">
+                             <svg class="icon text-accent-red mb-3 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" /> </svg>
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Adaptability</h3>
+                            <p class="text-secondary text-sm">Open to learning new things and adjusting to different situations, both in academics and personal pursuits.</p>
+                        </div>
+
+                        <div class="bg-primary p-6 rounded-lg border border-border-color shadow-sm">
+                            <svg class="icon text-accent-gold mb-3 h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Improvement My Creative Skills</h3>
+                            <p class="text-secondary text-sm">Trying to improve my creative skills in coding or just in general use cases.</p>
+                        </div>
+                        
+
+                    </div> <p class="mt-10 italic">I am always looking for opportunities to further enhance these skills and acquire new ones.</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary mt-16 py-8 border-t border-border-color">
+        <div class="container mx-auto px-6 text-center text-secondary text-sm">
+            <p>© <span id="current-year"></span> Minush Pathinisekara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

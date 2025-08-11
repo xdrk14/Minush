@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby: Katana Fighting - Minush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/ProfilePicture.jpg" type="image/jpg">
+</head>
+<body class="bg-primary text-primary">
+
+    <header class="bg-secondary sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+             <a href="index.html" class="text-2xl font-bold text-primary hover:text-accent-gold transition duration-300" style="font-family: 'Noto Serif JP', serif;">Minush</a>
+            <button id="mobile-menu-button" class="md:hidden block text-primary focus:outline-none" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="passion.html" class="nav-link">Passion</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-border-color" aria-hidden="true">
+            <ul class="flex flex-col items-center py-4 space-y-3">
+                 <li><a href="index.html" class="nav-link block py-2">Home</a></li>
+                <li><a href="about.html" class="nav-link block py-2">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link block py-2">Portfolio</a></li>
+                <li><a href="skills.html" class="nav-link block py-2">Skills</a></li>
+                <li><a href="passion.html" class="nav-link block py-2">Passion</a></li>
+                <li><a href="contact.html" class="nav-link block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="fixed top-[56px;] z-40 w-full mt-0 mb-0">
+        <div class="w-full h-1 bg-primary">
+            <div id="scroll-progress" class="h-full w-0 transition-all duration-1 ease-linear" style="background-color: gold;"></div>
+        </div>
+    </div>
+    <main class="pt-16">
+         <section id="hobby-content" class="py-16">
+            <div class="container mx-auto px-6">
+                <h1 class="bg-primary px-6 py-4 text-4xl font-bold text-center mb-12 page-title" style="border-radius: 12px;">Master the Way of the Katana</h1>
+                <div class="max-w-4xl mx-auto content-block"> <h2 class="text-3xl font-semibold text-primary mb-4">Teaching the Path of Discipline</h2>
+                   <p>As a dedicated katana instructor, I guide students through the art of Japanese swordsmanship—a discipline that extends far beyond mere technique. My instruction emphasizes the profound cultural significance, historical context, and personal growth inherent in this traditional martial art.</p>
+                   <p>Through structured training sessions, I help practitioners develop not only the physical techniques but also the mental clarity required—focus, patience, and self-control. Each lesson is designed to encourage precision and mindfulness in every movement.</p>
+
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 my-6 max-w-5xl mx-auto">
+       
+                        <div class="w-full md:w-1/2 relative pb-[177.78%] md:pb-0 md:h-auto rounded-lg overflow-hidden shadow-lg border border-border-color">
+                            <img src="assets/KatanaImagery.jpg"
+                                alt="Placeholder image representing Katana or martial arts"
+                                class="mx-auto rounded-lg shadow-md w-full">
+                        </div>
+                    
+                       
+                        <div class="w-full md:w-1/2 flex items-center">
+                            <img src="assets/Sittingpicture.jpg" 
+                                    alt="Katana demonstration or related imagery"
+                                    class="rounded-lg shadow-md w-full h-full object-cover border border-border-color">
+                        </div>
+                    </div>
+                   <h3 class="text-2xl font-semibold text-primary pt-4">My Philosophy of Instruction</h3>
+                   <p>In my dojo, the katana represents more than a weapon; it embodies elegance in simplicity, the pursuit of perfection, and the importance of cultural heritage. Through my teaching, I connect students to a rich tradition while imparting valuable life lessons that apply both inside and outside our training space.</p>
+                   <ul class="list-disc list-inside pl-4 space-y-2 mt-4">
+                       <li>Cultivation of unwavering focus and presence.</li>
+                       <li>Mastery of the delicate balance between power and control.</li>
+                       <li>Deep appreciation for craftsmanship and tradition.</li>
+                       <li>Development of resilience and perseverance.</li>
+                   </ul>
+
+                   <h3 class="text-2xl font-semibold text-primary pt-6 mt-6">Experience the Art</h3>
+                   <p>To illustrate the essence of Japanese swordsmanship as taught in my classes, here is a demonstration video</p>
+                   <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 my-6 max-w-5xl mx-auto">
+                       <!-- Video Container (Portrait 9:16) -->
+                       <div class="w-full md:w-1/2 relative pb-[177.78%] md:pb-0 md:h-auto rounded-lg overflow-hidden shadow-lg border border-border-color">
+                           <video controls class="absolute inset-0 w-full h-full object-cover rounded-lg md:static md:h-full">
+                               <source src="assets/KatanaVideo.mp4" type="video/mp4">
+                               Your browser does not support the video tag.
+                           </video>
+                       </div>
+                   
+                       <!-- Image Container (Match height of video) -->
+                       <div class="w-full md:w-1/2 flex items-center">
+                           <img src="assets/Standalonepicture.jpg" 
+                                alt="Katana demonstration or related imagery"
+                                class="rounded-lg shadow-md w-full h-full object-cover border border-border-color">
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary mt-16 py-8 border-t border-border-color">
+        <div class="container mx-auto px-6 text-center text-secondary text-sm">
+            <p>© <span id="current-year"></span> Minush Pathinisekara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com/forms"></script>
+    <script src="https://cdn.tailwindcss.com/typography"></script>
+    <script src="https://cdn.tailwindcss.com/aspect-ratio"></script>
+
+</body>
+</html>

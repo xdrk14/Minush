@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Minush - Personal Portfolio (Home)</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="assets/ProfilePicture.jpg" type="image/jpg" />
+	</head>
+
+	<body class="bg-primary text-primary">
+		<header class="bg-secondary sticky top-0 z-50 shadow-md">
+			<nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+				<a href="index.html" class="text-2xl font-bold text-primary hover:text-accent-gold transition duration-300" style="font-family: 'Noto Serif JP', serif">Minush</a>
+
+				<button id="mobile-menu-button" class="md:hidden block text-primary focus:outline-none" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+					</svg>
+				</button>
+
+				<ul class="hidden md:flex space-x-6 items-center">
+					<li><a href="index.html" class="nav-link">Home</a></li>
+					<li><a href="about.html" class="nav-link">About Me</a></li>
+					<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+					<li><a href="skills.html" class="nav-link">Skills</a></li>
+					<li><a href="passion.html" class="nav-link">Passion</a></li>
+					<li><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-border-color" aria-hidden="true">
+				<ul class="flex flex-col items-center py-4 space-y-3">
+					<li><a href="index.html" class="nav-link block py-2">Home</a></li>
+					<li><a href="about.html" class="nav-link block py-2">About Me</a></li>
+					<li>
+						<a href="portfolio.html" class="nav-link block py-2">Portfolio</a>
+					</li>
+					<li><a href="skills.html" class="nav-link block py-2">Skills</a></li>
+					<li>
+						<a href="passion.html" class="nav-link block py-2">Passion</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-link block py-2">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="fixed top-[55px;] z-40 w-full mt-0 mb-0">
+				<div class="w-full h-1 bg-primary">
+					<div id="scroll-progress" class="h-full w-0 bg-progress transition-all duration-1 ease-linear" style="background-color: gold"></div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section id="home-hero" class="inline-block min-h-screen flex items-center bg-gradient-to-b from-primary to-secondary -mt-16 pt-16 overflow-hidden">
+				<div class="bg-primary px-8 py-6 mx-auto text-center relative z-10" style="border-radius: 12px">
+					<h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-down">Minush</h1>
+					<p class="text-xl md:text-2xl text-secondary mb-8 animate-fade-in-up">Student | Martial Artist | Lifelong Learner</p>
+					<a href="about.html" class="inline-block bg-red-600 text-white font-bold py-3 px-10 rounded-full hover:bg-red-700 transition duration-300 text-lg transform hover:scale-105 shadow-lg border border-white border-opacity-40">Discover More</a>
+				</div>
+			</section>
+
+			<section class="bg-secondary py-16">
+				<div class="container mx-auto px-6 text-center">
+					<h2 class="text-3xl font-bold mb-10">Explore My Journey</h2>
+					<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+						<a href="about.html" class="block bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+							<h3 class="text-xl font-bold text-accent-gold mb-2">About Me</h3>
+							<p class="text-secondary text-sm">Learn about my background and goals.</p>
+						</a>
+						<a href="hobby.html" class="block bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+							<h3 class="text-xl font-bold text-accent-gold mb-2">Katana Fighting</h3>
+							<p class="text-secondary text-sm">Explore my passion for this martial art.</p>
+						</a>
+						<a href="skills.html" class="block bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+							<h3 class="text-xl font-bold text-accent-gold mb-2">My Skills</h3>
+							<p class="text-secondary text-sm">See the strengths I'm developing.</p>
+						</a>
+						<a href="contact.html" class="block bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+							<h3 class="text-xl font-bold text-accent-gold mb-2">Get In Touch</h3>
+							<p class="text-secondary text-sm">Contact me with questions or inquiries.</p>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-secondary mt-16 py-8 border-t border-border-color">
+			<div class="container mx-auto px-6 text-center text-secondary text-sm">
+				<p>
+					©
+					<span id="current-year"></span>
+					Minush Pathinisekara. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
